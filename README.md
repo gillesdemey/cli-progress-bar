@@ -7,9 +7,9 @@ var ProgressBar = require('cli-progress-bar')
 
 var bar = new ProgressBar()
 
-bar.show("test", 0.20)
+bar.show("Foo", 0.75)
 
-bar.pulse("this")
+bar.pulse("bar")
 
 bar.hide()
 ```
@@ -25,7 +25,7 @@ bar.hide()
 The **options** object can have the following properties, all of which are
 optional:
 
-* theme: defaults to ProgressBar.themes.unicode` if the terminal supports
+* theme: defaults to `ProgressBar.themes.unicode` if the terminal supports
   unicode according to [cli-character-set], otherwise it defaults to `ProgressBar.themes.ascii` or `ProgressBar.themes.cp437` for Windows.
 * width: sets a desired width (in columns) of the entire progress indicator, not just the bar. The progress bar itself will take up about half of the column width. Additional text may overflow the desired with. By default it uses the number of available columns of the TTY.
 
