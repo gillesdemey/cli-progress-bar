@@ -14,6 +14,8 @@ bar.pulse("this")
 bar.hide()
 ```
 
+![screenshot 2015-10-15 02 58 33](https://cloud.githubusercontent.com/assets/868844/10502089/a7a483c0-72e8-11e5-90c8-1c2786639c49.png)
+
 # API
 
 ### `var bar = new ProgressBar([options])`
