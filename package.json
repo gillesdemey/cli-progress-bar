@@ -1,0 +1,23 @@
+{
+  "name": "cli-progress-bar",
+  "version": "0.1.0",
+  "description": "A simple CLI progress bar, inspired by Gauge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gauge",
+    "cli",
+    "progress",
+    "bar"
+  ],
+  "author": "Gilles De Mey <gilles.de.mey@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.padleft": "^3.0.0",
+    "lodash.padright": "^3.0.0",
+    "log-update": "^1.0.2",
+    "cli-character-set": "gillesdemey/cli-character-set"
+  }
+}
