@@ -29,19 +29,19 @@ optional:
   unicode according to [cli-character-set], otherwise it defaults to `ProgressBar.themes.ascii` or `ProgressBar.themes.cp437` for Windows.
 * width: sets a desired width (in columns) of the entire progress indicator, not just the bar. The progress bar itself will take up about half of the column width. Additional text may overflow the desired with. By default it uses the number of available columns of the TTY.
 
-### `gauge.show([name, [completed]])`
+### `bar.show([name, [completed]])`
 
 * **name** – *(optional)* The name of the current thing contributing to progress. Defaults to the last value used, or "".
 * **completed** – *(optional)* The portion completed as a value between 0 and 1. Defaults to the last value used, or 0.
 
-### `gauge.hide()`
+### `bar.hide()`
 
-Removes the gauge from the terminal.
+Removes the progress bar from the terminal.
 
-### `gauge.pulse([name])`
+### `bar.pulse([name])`
 
 * **name** – *(optional)* The specific thing that triggered this pulse
 
-Spins the spinner in the gauge to show output. If **name** is included then
-it will be combined with the last name passed to `gauge.show` using the
+Spins the spinner in the progress bar to show output. If **name** is included then
+it will be combined with the last name passed to `bar.show()` using the
 subsection property of the theme (typically a right facing arrow).
