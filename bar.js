@@ -1,7 +1,7 @@
 var characterSet = require('cli-character-set')
 var logUpdate = require('log-update')
-var padLeft = require('lodash.padleft')
-var padRight = require('lodash.padright')
+var padStart = require('lodash.padstart')
+var padEnd = require('lodash.padend')
 var themes = require('./themes')
 var util = require('util')
 
@@ -48,12 +48,12 @@ ProgressBar.prototype._getProgressBar = function () {
   }
 
   function getComplete (percentage) {
-    return padLeft('', (percentage * getProgressWidth()), self.theme.complete)
+    return padStart('', (percentage * getProgressWidth()), self.theme.complete)
   }
 
   function getIncomplete (percentage) {
     var width = getProgressWidth() - (percentage * getProgressWidth())
-    return padRight('', width, self.theme.incomplete)
+    return padEnd('', width, self.theme.incomplete)
   }
 
   // half column width minus delimiter characters
