@@ -1,6 +1,6 @@
 {
   "name": "cli-progress-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple CLI progress bar, inspired by Gauge",
   "main": "bar.js",
   "scripts": {
