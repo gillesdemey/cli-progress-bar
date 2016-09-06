@@ -14,14 +14,14 @@
   ],
   "author": "Gilles De Mey <gilles.de.mey@gmail.com>",
   "license": "ISC",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/gillesdemey/cli-progress-bar"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gillesdemey/cli-progress-bar"
   },
   "dependencies": {
-    "lodash.padleft": "^3.0.0",
-    "lodash.padright": "^3.0.0",
-    "log-update": "^1.0.2",
-    "cli-character-set": "^0.1.0"
+    "cli-character-set": "^0.1.0",
+    "lodash.padend": "^4.6.1",
+    "lodash.padstart": "^4.6.1",
+    "log-update": "^1.0.2"
   }
 }
